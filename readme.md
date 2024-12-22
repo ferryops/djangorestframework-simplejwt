@@ -99,8 +99,7 @@ POST /api/token/
 ```json
 {
   "access": "<jwt-access-token>",
-  "refresh": "<jwt-refresh-token>",
-  "data": {...user-data}
+  "refresh": "<jwt-refresh-token>"
 }
 ```
 
