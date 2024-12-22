@@ -103,6 +103,12 @@ POST /api/token/
 }
 ```
 
+## Postman Collection
+
+A Postman collection is provided in the repository to help you test the API endpoints. Import the collection into Postman to interact with the API.
+
+[Django REST postman collection](https://github.com/ferryops/djangorestframework-simplejwt/blob/main/Django%20REST.postman_collection.json)
+
 ## Testing
 
 To verify the expiration and functionality of tokens, use tools like Postman or curl to interact with the API. You can also decode the JWT using [jwt.io](https://jwt.io) to check the `exp` field.
