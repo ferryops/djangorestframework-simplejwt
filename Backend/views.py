@@ -269,4 +269,4 @@ class TrainingScheduleView(APIView):
 
         schedule.delete()
         return Response({"message": "Training schedule deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
-
+    

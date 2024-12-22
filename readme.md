@@ -17,8 +17,8 @@ This project is a Django-based API that uses `djangorestframework-simplejwt` for
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/ferryops/djangorestframework-simplejwt.git
+cd djangorestframework-simplejwt
 ```
 
 ### 2. Create a Virtual Environment
@@ -99,7 +99,8 @@ POST /api/token/
 ```json
 {
   "access": "<jwt-access-token>",
-  "refresh": "<jwt-refresh-token>"
+  "refresh": "<jwt-refresh-token>",
+  "data": {...user-data}
 }
 ```
 
@@ -109,19 +110,14 @@ To verify the expiration and functionality of tokens, use tools like Postman or 
 
 ## Dependencies
 
-- Python 3.8+
-- Django 4.x
-- djangorestframework 3.x
-- djangorestframework-simplejwt
+- asgiref==3.8.1
+- Django==5.1.4
+- django-cors-headers==4.6.0
+- djangorestframework==3.15.2
+- djangorestframework-simplejwt==5.3.1
+- PyJWT==2.10.1
+- sqlparse==0.5.3
 
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
-
-Happy coding!
